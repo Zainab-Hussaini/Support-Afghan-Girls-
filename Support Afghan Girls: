@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Bookies Web page</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        font-size: 18px;
+        text-align: center;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        line-height: 1.5;
+        font-size: 16px;
+        margin: 20px 0 10px;
+      }
+      em {
+        color: rgb(107, 100, 100);
+        font-size: 16px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid rgb(192, 170, 233);
+        background-color: rgb(147, 116, 206);
+        color: rgb(241, 239, 245);
+        font-size: 16px;
+        line-height: 20px;
+        padding: 16px 24px;
+        border-radius: 18px;
+        box-shadow: rgb(95, 77, 129) 0px 8px 8px 0;
+        transition: all 200ms ease;
+        cursor: pointer;
+      }
+      button:hover {
+        color: rgb(155, 130, 202);
+        border: 1px rgb(98, 79, 134);
+      }
+      .read-more {
+        display: block;
+        font-size: 13px;
+        margin-top: 8px;
+        color: rgb(147, 116, 206);
+        text-decoration: none;
+      }
+      .container {
+        max-width: 600px;
+        background-color: rgb(205, 193, 228);
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+      .read-more:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The Bookies Movement</h1>
+      <hr />
+      <h2>Support Girl's Education in Afghanistan.</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/150/925/original/Afghan_girls.jpg?1732080106"
+        alt="Afghan Girls"
+      />
+      <p>
+        <strong> Afghanistan </strong> is the only country in the world that
+        bans girls’ secondary education. In Afghanistan, 75% of girls are out of
+        school. Since the
+        <a href="https://en.wikipedia.org/wiki/Taliban" target="_blank">
+          Taliban</a
+        >
+        took over the country in 2021, they have banned girls’ secondary
+        education — forbidding nearly 1.4 million girls from going to school
+        past grade 6. The Taliban uses laws and policies to deprive millions of
+        girls and women of their rights, a system of oppression called gender
+        apartheid. Women and girls are unable to go to school, work or
+        participate in public life. Despite their dire circumstances, women and
+        girls are resisting by learning in secret and speaking out against the
+        Taliban’s oppression.
+      </p>
+      <hr />
+      <em>
+        <span>
+          “Afghan girls are looking towards world leaders to act immediately and
+          push the Taliban to open girls’ schools. No society can advance if the
+          rights of women and girls are not fully guaranteed."
+        </span>
+        M. Rahim Jami
+      </em>
+      <hr />
+      <a
+        href="https://malala.org/countries/afghanistan"
+        target="_blank"
+        class="read-more"
+      >
+        Read more on MALALA FUND
+      </a>
+      <button class="contact-Us">Donate Today</button>
+    </div>
+    <script>
+      function contactUs() {
+        let name = prompt(" What is your first and last name?");
+        let email = prompt("What is your email address?");
+
+        if (name && email) {
+          alert(
+            "Thank you" +
+              " " +
+              name +
+              "! Appreciate your kindness! Your donation transforms lives and empowers Afghan girls. 😊🙏"
+          );
+        } else {
+          alert("Please enter both your full name and email to proceed.");
+        }
+      }
+      let contactButton = document.querySelector("button");
+      contactButton.addEventListener("click", contactUs);
+    </script>
+  </body>
+</html>
